@@ -1,0 +1,51 @@
+# Assignment Questions 4
+
+<aside>
+💡 **Q.1** Explain Hoisting in JavaScript
+
+</aside>
+
+<aside>
+💡 **Q.2** Explain Temporal Dead Zone?
+
+</aside>
+
+<aside>
+💡 **Q.3** Difference between var & let?
+
+</aside>
+
+<aside>
+💡 **Q.4** What are the major features introduced in ECMAScript 6?
+
+</aside>
+
+<aside>
+💡 **Q.5** What is the difference between **`let`** and **`const`** ?
+
+</aside>
+
+<aside>
+💡 **Q.6**  What is template literals in ES6 and how do you use them?
+
+</aside>
+
+<aside>
+💡 **Q.7** What’s difference between map & forEach?
+
+</aside>
+
+<aside>
+💡 **Q.8** How can you destructure objects and arrays in ES6?
+
+</aside>
+
+<aside>
+💡 **Q.9** How can you define default parameter values in ES6 functions?
+
+</aside>
+
+<aside>
+💡 **Q.10** What is the purpose of the spread operator (**`...`**) in ES6?
+
+</aside>
