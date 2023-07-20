@@ -1,0 +1,73 @@
+# Assignment Questions 3
+
+<aside>
+💡 **Q.1** What is a Media Query in CSS, and what is its purpose?
+
+</aside>
+
+<aside>
+💡 **Q.2** How do you define a media query in CSS?
+
+</aside>
+
+<aside>
+💡 **Q.3** Explain the concept of Breakpoints in Responsive Web Design and How They are used in Media Queries.
+
+</aside>
+
+<aside>
+💡 **Q.4** What is the purpose of using Media Queries for Print Media?
+
+</aside>
+
+<aside>
+💡 **Q.5** What is the purpose of the **`orientation`** media feature?
+
+</aside>
+
+<aside>
+💡 **Q.6** Imagine you are a web developer working for a creative agency that specializes in building visually appealing and interactive websites. The agency has recently received a client request to create a landing page similar to the design of the one-page website: https://www.getonecard.app/. The client wants to showcase a video prominently on the page to engage visitors.
+
+Your task is to create a simple webpage that replicates the one-page landing page design, including a responsive layout and an HTML video. The below images are for your reference. Some browsers don’t allow you to play videos without the controls attribute. So, you can add controls here, we will learn how to play a video without the controls attribute in the later sections.
+
+</aside>
+
+![                                                                                    **LARGE SCREEN**](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/529878ec-dfdf-4ea9-9198-0eb71b182bec/1.png)
+
+                                                                                    **LARGE SCREEN**
+
+![                                      **SMALL SCREEN**](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0472f14c-c72f-4a13-a43b-1bea11c78437/2.png)
+
+                                      **SMALL SCREEN**
+
+<aside>
+💡 **Q.7** You are tasked with building a webpage that displays an image gallery using a grid layout. The challenge is to ensure the gallery is visually appealing and functional on both large and small screens. On large screens, the gallery should display multiple images per row, while on small screens, it should collapse into a single column for optimal viewing. Refer to the attached images for visual reference. Implement this using CSS Grid and media queries for responsiveness.
+
+</aside>
+
+![3.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c0c9b12f-7ad7-4d43-8a1d-3a7296caa8c6/3.png)
+
+![4.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b7d1874-feac-4be4-bd37-90122f54d024/4.png)
+
+<aside>
+💡 **Q.8** In this coding challenge, your task is to create an information section for the previously built OneCard webpage clone, focusing on the different modes like dark and light modes. The webpage should look different depending on the screen size: dark mode for larger screens and light mode for smaller devices. The reference images are attached below.
+
+</aside>
+
+![5.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6aa9a291-1923-4caf-b34b-799c72b452f4/5.png)
+
+![6.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60b972ef-01de-49b3-bacc-21b6b98d4dd3/6.png)
+
+<aside>
+💡 **Q.9** You have reached the final task of learning responsive web design, which involves designing a responsive footer. Your goal is to build a simple webpage footer that matches the design shown in the attached image. The footer should adapt to different screen sizes, ensuring optimal visibility and alignment of the content. Refer to the attached image for a visual reference.
+
+</aside>
+
+![7.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/db124079-45bd-42ff-b782-5d1dc13ac288/7.png)
+
+![8.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a41975e1-ac00-4c06-bb1f-7436747dabf8/8.png)
+
+<aside>
+💡 **Q.10** You have been given to create a student dashboard page that includes a student details table. The challenge lies in handling the table's display on different screen sizes. On large screens, the table should be fully visible, while on small screens, it should have an internal scroll to ensure proper visibility of information. Refer to the attached images for visual reference.
+
+</aside>
