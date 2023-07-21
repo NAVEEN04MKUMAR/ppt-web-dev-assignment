@@ -1,22 +1,43 @@
 
 # Assignment Questions 1
 
-<aside>
 💡 **Q.1** <!DOCTYPE html> is it a tag of html? If not, what is it and why do we use it?
 
-</aside>
+what:it is the sit will helpful to the display the content of he HTML
+why:
+*defines the rules and structure of the HTML document.
+*by including this tag then  we instruct the browser engine to render the correct  mode.
+*helps the developers tothe write standard code instead of each one will write the unique one.
+*it gives the specified ersion it means that it is the HTML5 
 
-<aside>
 💡 **Q.2** ****Explain Semantic tags in html? And why do we need it?
 
-</aside>
+*Semmantic tags:it provide the value  about the information.
+*throgh this developer can understand also machines can understand.
 
-<aside>
+ex:
+
+1.<header>represent the heading iof the page,typically  contains the logo,introductory content.
+2.<nav> helpfl to the links to the other pages
+3.<main>main content o the page
+4.<section>represent the grouping of the content within the document,used to divide content in  meaningful way.
+5.<figure>:Any content is reffered from main content such as iimages,videos, or charts
+6.<footer>helpul to copyright information,contact details,or linked related pages.
+
 💡 **Q.3** Differentiate between HTML Tags and Elements?
 
-</aside>
+HTML tags:
+1.HTML tags are the building blocks of an HTML document and are used to define the structure and layout of web content.
+2.Tags are represented by angle brackets (<>) and are placed before and after the content they are defining.
+3.HTML tags are the individual markers that define the beginning and end of an element
+4.tags are the specific markers that define the boundaries and behavior of those elements.
 
-<aside>
+HTML Element:
+1.HTML elements are composed of HTML tags
+2.An HTML element is everything from the start tag (<tag>) to the end tag (</tag>), including the content in between.
+3.HTML elements consist of the tags, the content they enclose, and any associated attributes. 
+4.complete units of structure and content in an HTML document
+
 💡 **Q.4** Build Your Resume using HTML only
 
 </aside>
@@ -28,25 +49,42 @@
 
 ![html.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5d76dcda-d8eb-4c2e-836d-5c1aee0f8c6d/html.png)
 
-<aside>
+
 💡 **Q.6** What are some of the advantages of HTML5 over its previous versions?
 
-</aside>
+1.HTML5 introduced a set of semantic tags ex: <header>, <nav>, <article>, <section> that make it easier to structure a web page, providing more meaningful and descriptive elements for different types of content.
+2.HTML5 brought native support for embedding audio and video content directly into web pages without the need for third-party plugins like Flash. 
+3.HTML5 introduced the <canvas> element, which provides a powerful and flexible way to draw graphics, animations, and visualizations using JavaScript. 
+4.HTML5 encourages developers to write cleaner, more structured code with its improved semantic elements
 
 <aside>
 💡 **Q.7** Create a simple Music player using html only
 
 </aside>
 
-<aside>
 💡 **Q.8** What is the difference between <figure> tag and <img> tag?
 
-</aside>
+img:
+1.The <img> tag is a self-closing tag used to embed images into an HTML document.
+2.It does not have a closing tag and is written in the following format: <img src="image.jpg" alt="Description of the image">.
 
-<aside>
+<figure>:
+1.The <figure> tag is a block-level element used to encapsulate media content, such as images, illustrations, diagrams, audio, video, etc along with their optional captions.
+2.<figure>
+  <img src="example.jpg" alt="A beautiful sunset">
+  <figcaption>A beautiful sunset at the beach.</figcaption>
+</figure>
+
+
 💡 **Q.9** What’s the difference between html tag and attribute and give example of some global attributes?
 
-</aside>
+HTML Tag:
+1.An HTML tag is a markup element used to define the structure and content of an HTML document. Tags are enclosed within angle brackets (<>) and come in pairs: an opening tag and a closing tag.
+2.<p>This is a paragraph.</p>
+
+HTML Attributes:
+1.An HTML attribute provides additional information about an HTML element and is placed within the opening tag. Attributes are used to configure or modify the behavior of the element. 
+2.<img src="example.jpg" alt="A beautiful sunset">
 
 <aside>
 💡 **Q.10** Write Html code so that it looks like the below image
