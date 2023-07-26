@@ -1,3 +1,6 @@
+status:uncompleted
+
+
 # Assignment Questions 2
 
 <aside>
@@ -17,25 +20,39 @@
 
 <aside>
 💡 Q.4 Whats difference between Inline, Inline Block and block ?
+1.Inline:
+Inline elements are displayed in a line, one after the other, and they do not start on a new.
+
+2.Inline-Block:
+Inline-block elements are displayed in a line, one after the other, like inline elements, but they can have a width and height set.
+
+3.Block:
+Block elements start on a new line and take up the full width available by default.
+They create line breaks before and after themselves and form a block-level box.
+
 
 </aside>
 
-<aside>
+
 💡 Q.5 How is Border-box different from Content Box?
 
-</aside>
+1.Content-Box:
+Width and height are calculated based on the content size, excluding padding and border.
+2.Border-Box:
+Width and height include both the content size and any padding and border specified.
 
-<aside>
+
+
 💡 Q.6 What’s z-index and How does it Function ?
 
-</aside>
+It is a CSS property that controls the stacking order of positioned elements on the z-axis. 
+It determines the order in which elements are displayed on top of each other when they overlap in the document layout. 
+The higher the z-index value, the closer an element is to the viewer, and it will appear on top of elements with lower z-index values.
 
-<aside>
+
+
 💡 Q.7 What’s Grid & Flex and difference between them?****
 
-</aside>
-
-<aside>
 💡 Q.8 Difference between absolute and relative and sticky and fixed position explain with example.****
 
 </aside>
