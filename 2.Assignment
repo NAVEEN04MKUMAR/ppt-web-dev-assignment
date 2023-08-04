@@ -52,6 +52,8 @@ The higher the z-index value, the closer an element is to the viewer, and it wil
 
 
 💡 Q.7 What’s Grid & Flex and difference between them?****
+if we are working on a complex layout that requires a grid-like structure with multiple rows and column
+ if you need to align items within a container along a single axis, CSS Flexbox is a more suitable.
 
 💡 Q.8 Difference between absolute and relative and sticky and fixed position explain with example.****
 
