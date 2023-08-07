@@ -1,73 +1,116 @@
+
+status:not completed 6,7,8,9,10
 # Assignment Questions 3
 
-<aside>
 💡 **Q.1** What is a Media Query in CSS, and what is its purpose?
+ A Media Query in CSS is a technique used to apply different styles to a webpage based on various device characteristics or conditions, such as screen size, device orientation, resolution, and more.
+ By using Media Queries, we can create a single stylesheet that adapts and provides an optimal user experience across a wide range of devices and screen sizes
+ex:
 
-</aside>
+body {
+  font-size: 16px;
+}
 
-<aside>
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+here font size reduced to 14px from 16px
+
 💡 **Q.2** How do you define a media query in CSS?
+@media mediaType and (mediaFeature) {
+  CSS rules to be applied when the conditions are met 
+}
 
-</aside>
+@media: This keyword starts the media query declaration.
+mediaType: Specifies the type of media, such as screen, print, speech, etc.
+mediaFeature: Specifies the condition that triggers the application of the styles. 
+Media features are typically related to properties like screen width, height, orientation, resolution, etc
 
-<aside>
 💡 **Q.3** Explain the concept of Breakpoints in Responsive Web Design and How They are used in Media Queries.
 
-</aside>
+Identify Breakpoints: Start by identifying the key screen widths at which your webpage's layout should change. 
+Common breakpoints might be designed around common device sizes, such as smartphones, tablets, and desktops.
 
-<aside>
+Write Media Queries: For each breakpoint, you write a corresponding media query in your CSS. 
+The media query will specify a range of screen widths where certain styles should apply.
+
+Apply Styles: Within each media query block, you define CSS rules that adjust the design and layout of your webpage.
+You can modify properties like font sizes, margins, padding, columns, or even hide/show certain elements to ensure a better fit for the specific screen width.
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
 💡 **Q.4** What is the purpose of using Media Queries for Print Media?
 
-</aside>
+Optimized Layout: When content is printed, the layout considerations differ from screen display. Media Queries allow you to adjust margins, spacing, and positioning to ensure that the printed content looks balanced and visually appealing on paper.
 
-<aside>
+Reduced Clutter: You can use Media Queries to selectively hide or modify elements that are not necessary or relevant for the print version. This helps reduce clutter and ensures that the printed document focuses on the essential content.
+
+Font and Text Formatting: Media Queries for print enable you to adjust font sizes, line heights, and other text-related properties to enhance readability on paper.
+
+Page Breaks: You can use Media Queries to control where page breaks occur in the printed document, preventing awkward content splits and ensuring that each printed page looks well-organized.
+
+
 💡 **Q.5** What is the purpose of the **`orientation`** media feature?
+orientation Media Feature:
+portrait: Use this when the screen is taller than it is wide, like holding a phone upright.
+landscape: Use this when the screen is wider than it is tall, like when you turn the phone on its side.
+/* Styles for portrait orientation */
+@media (orientation: portrait) {
+  /* Adjust layout, font sizes, etc. for portrait orientation */
+  body {
+    font-size: 16px;
+  }
+}
 
-</aside>
+/* Styles for landscape orientation */
+@media (orientation: landscape) {
+  /* Adjust layout, font sizes, etc. for landscape orientation */
+  body {
+    font-size: 14px;
+  }
+}
 
-<aside>
+
 💡 **Q.6** Imagine you are a web developer working for a creative agency that specializes in building visually appealing and interactive websites. The agency has recently received a client request to create a landing page similar to the design of the one-page website: https://www.getonecard.app/. The client wants to showcase a video prominently on the page to engage visitors.
-
 Your task is to create a simple webpage that replicates the one-page landing page design, including a responsive layout and an HTML video. The below images are for your reference. Some browsers don’t allow you to play videos without the controls attribute. So, you can add controls here, we will learn how to play a video without the controls attribute in the later sections.
 
-</aside>
+**LARGE SCREEN**](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/529878ec-dfdf-4ea9-9198-0eb71b182bec/1.png)
+**LARGE SCREEN**
+ **SMALL SCREEN**](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0472f14c-c72f-4a13-a43b-1bea11c78437/2.png
+**SMALL SCREEN**
 
-![                                                                                    **LARGE SCREEN**](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/529878ec-dfdf-4ea9-9198-0eb71b182bec/1.png)
-
-                                                                                    **LARGE SCREEN**
-
-![                                      **SMALL SCREEN**](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0472f14c-c72f-4a13-a43b-1bea11c78437/2.png)
-
-                                      **SMALL SCREEN**
-
-<aside>
 💡 **Q.7** You are tasked with building a webpage that displays an image gallery using a grid layout. The challenge is to ensure the gallery is visually appealing and functional on both large and small screens. On large screens, the gallery should display multiple images per row, while on small screens, it should collapse into a single column for optimal viewing. Refer to the attached images for visual reference. Implement this using CSS Grid and media queries for responsiveness.
 
-</aside>
-
 ![3.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c0c9b12f-7ad7-4d43-8a1d-3a7296caa8c6/3.png)
-
 ![4.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b7d1874-feac-4be4-bd37-90122f54d024/4.png)
 
-<aside>
 💡 **Q.8** In this coding challenge, your task is to create an information section for the previously built OneCard webpage clone, focusing on the different modes like dark and light modes. The webpage should look different depending on the screen size: dark mode for larger screens and light mode for smaller devices. The reference images are attached below.
 
-</aside>
-
 ![5.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6aa9a291-1923-4caf-b34b-799c72b452f4/5.png)
-
 ![6.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60b972ef-01de-49b3-bacc-21b6b98d4dd3/6.png)
 
-<aside>
 💡 **Q.9** You have reached the final task of learning responsive web design, which involves designing a responsive footer. Your goal is to build a simple webpage footer that matches the design shown in the attached image. The footer should adapt to different screen sizes, ensuring optimal visibility and alignment of the content. Refer to the attached image for a visual reference.
 
-</aside>
-
 ![7.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/db124079-45bd-42ff-b782-5d1dc13ac288/7.png)
-
 ![8.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a41975e1-ac00-4c06-bb1f-7436747dabf8/8.png)
 
-<aside>
 💡 **Q.10** You have been given to create a student dashboard page that includes a student details table. The challenge lies in handling the table's display on different screen sizes. On large screens, the table should be fully visible, while on small screens, it should have an internal scroll to ensure proper visibility of information. Refer to the attached images for visual reference.
 
 </aside>
