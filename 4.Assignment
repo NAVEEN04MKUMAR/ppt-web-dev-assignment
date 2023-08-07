@@ -3,39 +3,84 @@
 <aside>
 💡 **Q.1** Explain Hoisting in JavaScript
 
-</aside>
+Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. 
 
-<aside>
+console.log(x); // Outputs: undefined
+var x = 5;
+
+foo(); // Outputs: "Hello, world!"
+function foo() {
+  console.log("Hello, world!");
+}
+
+
 💡 **Q.2** Explain Temporal Dead Zone?
+The Temporal Dead Zone (TDZ) is a concept in JavaScript that refers to the period between the creation of a variable using let or const and the point where it is actually declared and initialized with a value. 
+During this period, any attempt to access the variable will result in a ReferenceError.
+console.log(x); // Throws a ReferenceError: Cannot access 'x' before initialization
+let x = 10;
 
-</aside>
-
-<aside>
 💡 **Q.3** Difference between var & let?
+ Re-declaration:
+var: Variables declared with var can be re-declared within the same scope without causing an error. 
+The subsequent declaration simply reassigns the existing variable.
+let: Variables declared with let cannot be re-declared within the same block scope. 
+Attempting to do so will result in a syntax error.
 
-</aside>
+Scoping:
+var: Variables declared with var have function-level scope.
+This means that they are accessible within the entire function in which they are defined, even if the definition is inside a block (like a loop or conditional statement).
+If declared outside of any function, they become global variables accessible throughout the entire program.
+let: Variables declared with let have block-level scope. 
+This means they are limited to the block (enclosed by curly braces) in which they are defined. 
+They are not accessible outside of that block.
 
-<aside>
 💡 **Q.4** What are the major features introduced in ECMAScript 6?
+Promises: Introduces a built-in way to manage asynchronous operations, making it easier to handle complex asynchronous flows and improve error handling.
+Map and Set: Offers new data structures (Map and Set) for managing collections of data, with support for custom keys and unique values.
+Typed Arrays: Introduces typed arrays for efficient manipulation of binary data, such as integers and floats, in a controlled and memory-efficient manner.
+Arrow Functions: Provides a concise syntax for writing functions, especially for short anonymous functions, and automatically binds the this value lexically.
 
-</aside>
-
-<aside>
 💡 **Q.5** What is the difference between **`let`** and **`const`** ?
+let:
+Variables declared with let have block-level scope, meaning they are limited to the block (enclosed by curly braces) in which they are defined.
+let variables can be reassigned with a new value after their initial assignment.
+
+const:
+Variables declared with const also have block-level scope, similar to let.
+const variables cannot be reassigned after their initial assignment. 
+Once assigned a value, it remains constant throughout the variable's scope.
+
 
 </aside>
 
 <aside>
 💡 **Q.6**  What is template literals in ES6 and how do you use them?
+Template literals in ECMAScript 6 (ES6) are a way to create strings with embedded expressions and multiline support. 
+They provide a more concise and readable syntax for string manipulation compared to traditional string concatenation.
 
-</aside>
+To use template literals, you wrap your string content in backticks ( ) instead of single or double quotes.
+Within the template literal, you can embed placeholders for expressions using ${expression}.
+const name = "Alice";
+const age = 30;
+const message = `Hello, my name is ${name} and I am ${age} years old.`;
+console.log(message);
 
-<aside>
 💡 **Q.7** What’s difference between map & forEach?
+forEach() simply iterates over the array and executes a callback without creating a new array. 
+Use map() when you need to transform the elements and create a new array, and use forEach() when you want to perform an action on each element without creating a new array.
 
-</aside>
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach((num) => {
+  console.log(num);
+});
 
-<aside>
+const numbers = [1, 2, 3, 4, 5];
+const squaredNumbers = numbers.map((num) => {
+  return num * num;
+});
+console.log(squaredNumbers); // Outputs: [1, 4, 9, 16, 25]
+
 💡 **Q.8** How can you destructure objects and arrays in ES6?
 
 </aside>
