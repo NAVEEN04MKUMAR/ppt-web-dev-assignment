@@ -82,15 +82,71 @@ const squaredNumbers = numbers.map((num) => {
 console.log(squaredNumbers); // Outputs: [1, 4, 9, 16, 25]
 
 💡 **Q.8** How can you destructure objects and arrays in ES6?
+Destructuring is a feature introduced in ECMAScript 6 (ES6) that allows you to extract values from objects and arrays into distinct variables
+const person = {
+  firstName: "naven",
+  lastName: "kumar",
+  age: 22,
+};
 
-</aside>
+// Destructuring object properties
+const { firstName, lastName, age } = person;
 
-<aside>
+console.log(firstName); // Outputs: "naveen"
+console.log(lastName);  // Outputs: "kumar"
+console.log(age);       // Outputs: 22
+
+Destructuring Arrays:
+
+To destructure an array, you use square brackets [] and specify the positions of the elements you want to extract.
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Destructuring array elements
+const [first, second, third] = numbers;
+
+console.log(first);  // Outputs: 1
+console.log(second); // Outputs: 2
+console.log(third);  // Outputs: 3
+
 💡 **Q.9** How can you define default parameter values in ES6 functions?
+ we can define default parameter values for function parameters, 
+which are used when an argument is not explicitly passed or is undefined. 
+This feature allows you to provide sensible or fallback values for function arguments.
 
-</aside>
+ex:
+function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
 
-<aside>
+
+greet();         // Outputs: "Hello, Guest!"
+greet("Alice"); // Outputs: "Hello, Alice!"
+In this example, the name parameter of the greet function has a default value of "Guest".
+If we call greet() without providing an argument, the default value is used. 
+If we call greet("Alice"), the provided argument overrides the default value.
+
 💡 **Q.10** What is the purpose of the spread operator (**`...`**) in ES6?
+1. Creating Array Copies:
+The spread operator can be used to create a shallow copy of an array.
 
-</aside>
+const originalArray = [1, 2, 3];
+const copiedArray = [...originalArray];
+
+2. Object Literals:
+In object literals, the spread operator can be used to merge properties from one or more objects into a new object.
+
+const person = { firstName: "Alice", lastName: "Smith" };
+const details = { age: 30, ...person };
+
+console.log(details); // Outputs: { firstName: "Alice", lastName: "Smith", age: 30 }
+
+3. String to Characters:
+The spread operator can convert a string into an array of its individual characters.
+
+const text = "hello";
+const characters = [...text];
+console.log(characters); // Outputs: ["h", "e", "l", "l", "o"]
+
+The spread operator simplifies code and provides a more elegant way to work with arrays, objects, and other iterable data types. 
+It enhances readability, makes code concise, and allows for more flexible manipulation of data in various contexts.
