@@ -1,52 +1,168 @@
 
 # Assignment Questions 6
 
-<aside>
+
 💡 **Q.1** What’s Constructor And Its Purpose?
 
-</aside>
+A constructor in JavaScript is a special method that is automatically called when an object is created from a class or a constructor function. 
+It is used to initialize the object's properties and set up its initial state. 
+Constructors allow you to define the blueprint for creating objects of a particular type or class.
 
-<aside>
+The purpose of a constructor is to:
+
+Initialize Properties: Constructors are used to set the initial values of an object's properties. 
+This ensures that an object is created in a valid and usable state.
+
+Encapsulation: Constructors provide a way to encapsulate the process of object creation and initialization.
+This helps in organizing and managing the object's internal state.
+
+
+
 💡 **Q.2** Explain This Keyword and Its Purpose?
 
-</aside>
+The this keyword in JavaScript is a special keyword that refers to the current instance of an object or the context in which a function is executed.
+The behavior of this depends on how and where it is used, and it allows you to access properties and methods of the current object or context.
 
-<aside>
+Arrow Functions:
+Arrow functions have a different behavior for this. They inherit the this value from their containing function or scope.
+
+const person = {
+    name: "Alice",
+    sayHello: () => {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+person.sayHello(); // Output: "Hello, my name is undefined"
+
+Dynamic Context:
+
+The value of this is determined at runtime based on how a function is invoked. 
+It can change depending on the calling context, such as when a function is called with different objects or explicitly using functions like call, apply, or bind.
+
+function greet() {
+    console.log(`Hello, ${this.name}!`);
+}
+
+const person1 = { name: "Alice" };
+const person2 = { name: "Bob" };
+
+greet.call(person1); // Output: "Hello, Alice!"
+greet.call(person2); // Output: "Hello, Bob!"
+
+
 💡 **Q.3** What’s Call Apply Bind Method & Difference Between them
 
-</aside>
 
-<aside>
 💡 **Q.4** Explain OOPS ?
+Object-Oriented Programming (OOP) is a programming paradigm that focuses on organizing code into objects, which are instances of classes.
+OOP promotes the concept of modeling real-world entities, their attributes, and their interactions in a structured and modular way. 
+It provides a set of principles and concepts to design and manage software systems more effectively.
 
-</aside>
-
-<aside>
 💡 **Q.5** Whats Abstraction and Its Purpose?
 
-</aside>
 
-<aside>
+
 💡 **Q.6** Whats Polymorphism and Purpose of it?
 
-</aside>
 
-<aside>
+
+
 💡 **Q.7**  Whats Inheritance and Purpose of it?
 
-</aside>
 
-<aside>
+
+
 💡 **Q.8** Whats Encapsulation and Purpose of it ?
+It refers to the practice of bundling data (attributes) and methods (functions) that operate on that data into a single unit, usually represented by a class.
+Encapsulation restricts direct access to the internal state of an object and provides controlled access through well-defined interfaces.
+The purpose of encapsulation is to promote data integrity, hide implementation details, and enhance code maintainability and security.
+class RemoteControl {
+    constructor() {
+        this._volume = 50; // Private attribute
+    }
 
-</aside>
+    increaseVolume() {
+        if (this._volume < 100) {
+            this._volume += 10;
+        }
+    }
 
-<aside>
+    decreaseVolume() {
+        if (this._volume > 0) {
+            this._volume -= 10;
+        }
+    }
+
+    getVolume() {
+        return this._volume;
+    }
+}
+
+const remote = new RemoteControl();
+console.log(remote._volume); // Direct access prevented
+
+remote.increaseVolume();
+console.log(remote.getVolume()); // Output: 60
+
+In this example, the BankAccount class encapsulates the account number and balance as private attributes.
+The deposit, withdraw, and getBalance methods provide controlled access to modify and retrieve the account balance.
+The use of encapsulation helps protect the integrity of the account's internal state and enforces proper usage of the class
+
 💡 **Q.9** Explain Class in JavaScript?
 
-</aside>
+In JavaScript, a class is a blueprint or template for creating objects with similar properties and methods. 
+It is a fundamental concept in Object-Oriented Programming (OOP) that allows you to define the structure and behavior of objects in a structured and reusable way. 
+Classes provide a way to create multiple instances (objects) with consistent properties and behaviors.
 
-<aside>
+The syntax for defining a class in JavaScript is as follows:
+
+class ClassName {
+    constructor(/* constructor parameters */) {
+        // Initialization code
+    }
+
+    method1(/* method parameters */) {
+        // Method code
+    }
+
+    method2(/* method parameters */) {
+        // Method code
+    }
+
+    // ... more methods
+}
+
+constructor:
+The constructor is a special method that is automatically called when an object is created from the class. It initializes the object's properties and sets up its initial state. You can pass parameters to the constructor to customize the object's creation.
+
+Methods:
+Methods are functions defined within the class that specify the behavior of the objects created from the class. 
+These methods can operate on the object's properties and perform various tasks.
+
+Here's an example of defining and using a class in JavaScript
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+    }
+}
+
+// Creating instances of the Person class
+const person1 = new Person("Alice", 25);
+const person2 = new Person("Bob", 30);
+
+// Calling the greet method on instances
+person1.greet(); // Output: "Hello, my name is Alice and I'm 25 years old."
+person2.greet(); // Output: "Hello, my name is Bob and I'm 30 years old."
+
+In this example, the Person class is defined with a constructor that initializes the name and age properties.
+It also has a greet method that logs a greeting message using the object's properties.
+Two instances of the Person class are created, and the greet method is called on each instanc
+
 💡 **Q.10** What’s Super Keyword & What it does?
 
-</aside>
