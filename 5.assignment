@@ -12,51 +12,166 @@
 
 <aside>
 💡 **Q.3** Explain SetTimeOut and setInterval ?
+setInervel: JavaScript function that allows you to repeatedly execute a function at a specified interval. 
+Here's an example usage of setInterval:
 
-</aside>
+function updateCounter() {
+    counter++;
+    console.log("Counter: " + counter);
+}
 
-<aside>
+let counter = 0;
+setInterval(updateCounter, 1000);
+In this example, the updateCounter function will be executed every 1000 milliseconds (or 1 second), incrementing the counter and logging its value
+
+settimeout:
+
+setTimeout is a JavaScript function that allows you to schedule the execution of a function after a specified delay. It is often used to introduce a delay before performing a certain action or triggering a function. The basic syntax of setTimeout is as follows:
+
+Here's an example usage of setTimeout:
+function showMessage() {
+    console.log("Delayed message after 2000 milliseconds");
+}
+
+setTimeout(showMessage, 2000);
+In this example, the showMessage function will be executed after a delay of 2000 milliseconds (or 2 seconds).
+
 💡 **Q.4** how can you handle Async code in JavaScript ?
+Callbacks:
+Callbacks are functions that are passed as arguments to another function and are executed once the asynchronous operation is completed. 
+However, nested callbacks can lead to "callback hell" and make the code hard to read and maintain.
 
-</aside>
+Example:
 
-<aside>
+fetchData(function(data) {
+    processData(data, function(result) {
+        displayResult(result);
+    });
+});
+
+
+Async/Await:
+Async/await is a modern and intuitive way to work with asynchronous code. 
+The async keyword is used to define an asynchronous function, and the await keyword is used within the function to pause execution until the asynchronous operation is complete.
+
+Example:
+
+async function fetchAndProcess() {
+    try {
+        const data = await fetchData();
+        const result = await processData(data);
+        displayResult(result);
+    } catch (error) {
+        handleError(error);
+    }
+}
+
 💡 **Q.5** What are Callbacks &  Callback Hell ?
 
-</aside>
 
-<aside>
 💡 **Q.6** What are Promises & Explain Some Three Methods of Promise
 
-</aside>
+then():
+The then() method is used to handle the successful resolution of a Promise. 
+It takes two optional arguments: a success callback function and an error callback function. 
+The success callback is invoked when the Promise is fulfilled, and it receives the resolved value. 
+The error callback is invoked when the Promise is rejected, and it receives the error reason.
 
-<aside>
+myPromise.then(
+    function(result) {
+        console.log("Resolved:", result);
+    },
+    function(error) {
+        console.error("Rejected:", error);
+    }
+);
+
+catch():
+The catch() method is used to handle errors that occur during the asynchronous operation or any subsequent then() callbacks.
+It is a shorthand for specifying only the error callback function without a success callback.
+
+myPromise
+    .then(function(result) {
+        console.log("Resolved:", result);
+    })
+    .catch(function(error) {
+        console.error("Caught:", error);
+    });
+
+finally():
+The finally() method is used to specify a callback that will be executed regardless of whether the Promise is resolved or rejected. 
+This is useful for cleanup tasks that need to be performed regardless of the outcome.
+myPromise
+    .then(function(result) {
+        console.log("Resolved:", result);
+    })
+    .catch(function(error) {
+        console.error("Caught:", error);
+    })
+    .finally(function() {
+        console.log("Cleanup or final tasks");
+    });
+
 💡 **Q.7** What’s async & await Keyword in JavaScript
+simplify the handling of asynchronous code, making it more readable and resembling synchronous code flow. 
+They work together to create a more elegant and intuitive way of dealing with Promises and asynchronous operations.
 
-</aside>
+async Keyword:
+The async keyword is used to define an asynchronous function. 
+An asynchronous function always returns a Promise implicitly, even if you don't explicitly create one. 
+This allows you to use await inside the function to pause execution until a Promise is resolved, making it appear as if the code is synchronous.
 
-<aside>
+async function fetchData() {
+    // Asynchronous code...
+    return result;
+}
+
+await Keyword:
+The await keyword is used within an async function to pause execution until a Promise is fulfilled (resolved) or rejected. 
+It "awaits" the completion of the asynchronous operation before moving on to the next line of code.
+
+async function processAsyncData() {
+    try {
+        const data = await fetchData();
+        const processedResult = await processData(data);
+        return processedResult;
+    } catch (error) {
+        console.error("An error occurred:", error);
+    }
+}
+
 💡 **Q.8** Explain Purpose of Try and Catch Block & Why do we need it?
+The try and catch blocks are used in JavaScript for error handling. 
+They allow you to gracefully handle and manage errors that might occur during the execution of your code. 
+Errors can arise from various sources, such as invalid data, unexpected conditions, or failed asynchronous operations.
+The purpose of using try and catch blocks is to provide a mechanism to detect and handle these errors without causing the entire program to crash.
 
-</aside>
+Error Recovery: When an error occurs, the catch block allows you to provide a fallback plan or alternate behavior that helps your program recover from the error and continue running.
+Graceful Handling: Instead of allowing the error to propagate and potentially crashing the program, using catch allows you to handle the error in a controlled manner, which provides a better user experience.
 
-<aside>
 💡 **Q.9** Explain fetch
+fetch is a modern API in JavaScript that provides an interface for making network requests, typically used to fetch resources (e.g., data, files, etc.) from a server or an external resource. 
 
-</aside>
+The basic syntax of the fetch function is as follows:
 
-<aside>
+fetch(url[, options])
+    .then(response => {
+        // Handle the response
+    })
+    .catch(error => {
+        // Handle errors
+    });
+url: The URL of the resource you want to fetch.
+options (optional): An object containing additional options for the fetch request, such as headers, request method, body, etc
+
 💡 **Q.10** How do you define an asynchronous function in JavaScript using async/await?
 
-</aside>
+To define an asynchronous function in JavaScript using the async/await syntax, you use the async keyword before the function declaration.
+An asynchronous function implicitly returns a Promise that resolves to the value returned by the function or rejects with an error if an exception is thrown.
 
+Here's the basic syntax of defining an asynchronous function using async/await:
 
-
-
-
-
-
-
-
-
-
+async function functionName() {
+    // Asynchronous code using await
+    return result; // The result can be a value or a resolved Promise
+}
