@@ -1,1 +1,71 @@
 
+# Assignment Questions 9
+
+<aside>
+💡 **Q.1** What are hooks in react? how to identify hooks?
+
+</aside>
+
+<aside>
+💡 **Q.2** Explain useState Hook & what can you achieve with it?
+
+</aside>
+
+<aside>
+💡 **Q.3** How to pass data from one component to another component
+
+</aside>
+
+<aside>
+💡 **Q.4** What is the significance of the "key" prop in React lists, and why is it important to use it correctly?
+
+</aside>
+
+<aside>
+💡 **Q.5** What is the significance of using "setState" instead of modifying state directly in React?
+
+</aside>
+
+<aside>
+💡  **Q.6** Explain the concept of React fragments and when you should use them.
+
+</aside>
+
+<aside>
+💡 **Q.7** How do you handle conditional rendering in React?
+
+</aside>
+
+<aside>
+💡 **Q.8**  Create a Simple Todo Web App with following features Using React :
+
+- An input button where users can type their tasks.
+- On clicking the submit button, the entered task should be displayed in the UI.
+- The UI layout should resemble the image provided.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2144127-1975-4844-9ebd-fcbf44dc402f/Untitled.png)
+
+</aside>
+
+<aside>
+💡 **Q. 9** Expand the existing todo web app with two additional functionalities:
+
+1. On clicking the "Update Status" button:
+    - Update the status of the task.
+    
+2. On clicking the "Remove Todo" button:
+    - Remove the selected todo from the UI.
+    - Ensure that the deleted todo is no longer visible in the todo list.
+
+See below **Image** for **Reference** 
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2144127-1975-4844-9ebd-fcbf44dc402f/Untitled.png)
+
+</aside>
+
+<aside>
+💡 **Q. 10** Build Calculator Web app using React, See below image for reference
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/070b23de-76aa-4711-b5d5-4d48a1f6536d/Untitled.png)
+
+</aside>
