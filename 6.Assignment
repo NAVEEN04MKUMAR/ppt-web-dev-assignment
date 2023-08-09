@@ -1,4 +1,4 @@
-
+uncompleted: 3,10
 # Assignment Questions 6
 
 
@@ -59,18 +59,121 @@ OOP promotes the concept of modeling real-world entities, their attributes, and 
 It provides a set of principles and concepts to design and manage software systems more effectively.
 
 💡 **Q.5** Whats Abstraction and Its Purpose?
+ It refers to the process of simplifying complex reality by modeling classes of objects or systems that share common attributes or behaviors, while hiding unnecessary details. 
+In other words, abstraction allows you to focus on the essential aspects of an object or system while ignoring or abstracting away the non-essential details.
 
+class BankAccount {
+    constructor(accountNumber, accountHolder) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = 0;
+    }
 
+    deposit(amount) {
+        if (amount > 0) {
+            this.balance += amount;
+            console.log(`Deposited $${amount} into account ${this.accountNumber}`);
+        } 
+}
+
+    withdraw(amount) {
+        if (amount > 0 && amount <= this.balance) {
+            this.balance -= amount;
+            console.log(`Withdrew $${amount} from account ${this.accountNumber}`);
+        } 
+}
+}
+
+// Usage
+const account1 = new BankAccount("123456", "John Doe");
+account1.deposit(1000);
+account1.withdraw(200);
+
+The abstraction allows you to create and manage multiple bank accounts with a consistent and simplified interface, 
+without needing to worry about the internal workings of the account.
 
 💡 **Q.6** Whats Polymorphism and Purpose of it?
 
+Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated as objects of a common superclass. 
+It enables you to write code that can work with objects in a more generic and flexible way, without needing to know the specific type of each object
 
+Driving Interface (Base Class): You define a basic set of rules for how vehicles should be driven.
+This includes a method called drive(), which all vehicles must have.
 
+Vehicle Types (Subclasses): You create specific types of vehicles like cars, motorcycles, and bicycles, each following the "driving" rules.
+These vehicles have their own unique ways of implementing the drive() method.
+
+Using Polymorphism: Now, when you want to "drive" any vehicle, you don't need to know exactly what type it is. 
+You simply use the drive() method, and each vehicle knows how to move according to its type.
+
+Here's how it looks in simple code:
+
+class Vehicle {
+    drive() {
+        throw new Error("Subclasses must implement drive method.");
+    }
+}
+
+class Car extends Vehicle {
+    drive() {
+        return "Driving a car vroom vroom!";
+    }
+}
+
+class Motorcycle extends Vehicle {
+    drive() {
+        return "Riding a motorcycle vroom!";
+    }
+}
+
+}
+
+// Polymorphism in action
+function takeVehicleForSpin(vehicle) {
+    console.log(vehicle.drive());
+}
+
+const car = new Car();
+takeVehicleForSpin(car);        // Outputs: Driving a car vroom vroom!
 
 💡 **Q.7**  Whats Inheritance and Purpose of it?
 
+Inheritance in JavaScript refers to the mechanism by which one object can acquire the properties and methods of another object.
+It allows you to create a hierarchy of objects where one object (the child or subclass) inherits the attributes and behaviors of another object (the parent or superclass).
+In JavaScript, inheritance is implemented using prototypes.
 
+Purpose of Inheritance in JavaScript:
 
+Code Reusability: Inheritance enables you to create new objects based on existing objects, allowing you to reuse code and avoid redundancy. 
+Properties and methods defined in a parent object can be inherited by multiple child objects.
+
+Modularity and Organization: Inheritance helps you organize your code by creating a clear structure and hierarchy of objects. 
+It promotes a more organized and maintainable codebase by grouping related functionalities together.
+
+// Parent object (superclass)
+function Shape(color) {
+    this.color = color;
+}
+Shape.prototype.getColor = function() {
+    return this.color;
+};
+
+// Child objects (subclasses)
+function Circle(color, radius) {
+    Shape.call(this, color);
+    this.radius = radius;
+}
+
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.constructor = Circle;
+
+Circle.prototype.getArea = function() {
+    return Math.PI * this.radius * this.radius;
+};
+
+const redCircle = new Circle("red", 5);
+console.log("Color:", redCircle.getColor());
+console.log("Area:", redCircle.getArea());
 
 💡 **Q.8** Whats Encapsulation and Purpose of it ?
 It refers to the practice of bundling data (attributes) and methods (functions) that operate on that data into a single unit, usually represented by a class.
