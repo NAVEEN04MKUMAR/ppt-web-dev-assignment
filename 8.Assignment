@@ -4,39 +4,49 @@
 <aside>
 💡 **Q.1**  Whats React and its pros and cons?
 
-</aside>
 
-<aside>
+React is an open-source JavaScript library for building user interfaces. Developed and maintained by Facebook, React is widely used to create dynamic, efficient, and reusable UI components for web applications. It follows a component-based architecture, where user interfaces are broken down into smaller, reusable pieces that can be composed together to create complex user interfaces.
+
+Pros of React:
+
+Component Reusability: React promotes the creation of reusable UI components, which simplifies development, improves code maintainability, and speeds up the development process.
+
+Virtual DOM: React uses a virtual DOM to optimize updates to the actual DOM.
+This leads to improved performance by minimizing unnecessary reflows and repaints in the browser.
+
+Declarative Syntax: React uses a declarative syntax, making it easier to understand and predict how the UI should look based on the current state of the application.
+
+Cons of React:
+
+Learning Curve: While React's fundamentals are relatively easy to grasp, mastering advanced concepts like state management, context, and hooks may require some learning and practice.
+
+Boilerplate: While React provides a robust foundation, setting up a complete development environment with build tools and configurations can involve some initial setup and boilerplate code.
+
+Complex State Management: Managing complex application states can become challenging, especially in larger applications.
+Additional libraries (such as Redux or Mobx) are often used to address this issue.
+
 💡 **Q.2** What do you understand by Virtual Dom?
+Real DOM vs. Virtual DOM:
+ Virtual DOM is a concept that helps optimize the process of updating and rendering web pages by efficiently managing changes to the user interface without directly manipulating the underlying Real DOM.
 
-</aside>
-
-<aside>
 💡 **Q.3** Difference between Virtual Dom vs Real Dom
 
-</aside>
 
-<aside>
+
+
+
+
 💡 **Q.4** Whats component? Types of component
 
-</aside>
 
-<aside>
 💡 **Q.5** Difference between class & function based component
 
-</aside>
 
-<aside>
 💡 **Q.6** Explain react component life cycle
 
-</aside>
-
-<aside>
 💡 **Q.7** Explain Prop Drilling in React & Ways to avoid it
 
-</aside>
 
-<aside>
 💡 **Q.8** Create a Counter Web App using React
 
 - Develop a web application using React that functions as a counter.
