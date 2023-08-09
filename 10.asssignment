@@ -1,0 +1,135 @@
+# Assignment Questions 10
+
+<aside>
+💡 **Q.1** Explain Middlewares in NodeJS ?
+
+</aside>
+
+<aside>
+💡 **Q.2** Why use Express Over NodeJS ?
+
+</aside>
+
+<aside>
+💡 **Q.3** What are REST API ?
+
+</aside>
+
+<aside>
+💡 **Q.4** What is the use of MongoDB?
+
+</aside>
+
+<aside>
+💡 **Q.5**  What is Mongoose and how does it relate to MongoDB?
+
+</aside>
+
+<aside>
+💡 **Q.6** Build a Server Using Http Module NodeJS with api endpoints for Getting Products Data
+
+      ‘/’ → send msg as “Welcome to Men & Women Dummy Data”
+
+     ‘/men’ → send 10 products data of men
+
+     ‘/women’ → send 10 products data of women
+
+     ‘/other’ → send response as page not found
+
+**Note :** You Can any Product Data
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68a8b44e-a6af-4a57-83a4-2620c2efda7c/Untitled.png)
+
+</aside>
+
+<aside>
+💡 **Q.7** Build a Server that Generate Random Number Using Express
+‘/random’ → send random number in response {random:10}
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77914090-b413-4844-8b43-7a244f398073/Untitled.png)
+
+</aside>
+
+<aside>
+💡 **Q.8** Create a Backend For Counter Web App with Api Endpoint for Managing Counter Using Express
+
+- ‘/’ → send counter data as {counter:counter}
+- `/increment` → increment counter by 1 and send in response latest data as {counter:counter}
+- `/decrement` → decrement counter by 1 and send in response latest data as {counter:counter}
+
+**Note:** Using Express is Mandatory for this Question
+
+</aside>
+
+<aside>
+💡 **Q.9** You are tasked with building the backend for a Todo web application. The application allows users to create, update, and delete tasks in their to-do list with Api Endpoint as mentioned below
+
+**`/`** -->  send all the todos which are created by user
+
+**`/add`** --> to create todo create a middleware to validate user providing all the mandatory input (task), if user doesn't provide task as input send resp as validation failed
+
+**`/update/:id`**  --> to update todo with Todo Id, after updating send resp as {msg:"todo update successfully",data:allTodos}
+
+**`/delete/:id`** -->  to update todo with Todo id, after deleting send resp as {msg:"todo deleted",data:allTodos}
+
+</aside>
+
+<aside>
+💡 **Q.10 Assignment:** Full Stack Blog Web Application (PW Blog) Development using **MERN Stack**
+
+**Description:**
+You have been assigned the task of building a full stack blog web application using the MERN (MongoDB, Express.js, React.js, Node.js) stack. The application will allow users to create, read, update, and delete blog posts. Users can also register, log in The backend will handle data storage and retrieval, while the frontend will provide a user-friendly interface for interacting with the application.
+
+**Requirements:**
+
+1. **User Authentication:** Implement user authentication and authorization mechanisms to ensure secure access to the application. Users should be able to register, log in, and log out.
+2. **Blog Post Management:** Create endpoints to manage blog posts, including the following functionalities:
+    - Display a list of blog posts
+    - View detailed information for each blog post
+    - Create new blog posts
+    - Update existing blog posts
+    - Delete blog posts
+    
+    Note:  User Should be able to delete his own blog Only
+    
+3. **Database Design**: Design the database schema to store blog posts, user details Use MongoDB  to store and retrieve data efficiently.
+4. **API Design**: Define a RESTful API to expose the backend functionalities. Ensure the API endpoints are well-structured, follow best practices, and provide appropriate error handling.
+5. **Frontend Development:** Create a intuitive user interface using React.js to interact with the backend API. Implement features such as blog post listing, User Page where he can see his blog post, and blog creation and editing, Login & SignUP Page
+6. **Deployment**: Deploy the application to a hosting environment (e.g., Vercel, Netlify) and ensure it is accessible to users.
+
+**Deliverables:**
+
+- A fully functional full stack blog web application built using the MERN stack.
+- Source code for the backend and frontend components, properly organized and commented for clarity and maintainability.
+- Documentation (readme.md) describing the API endpoints, frontend components, and their usage.
+- Any additional instructions or dependencies required to run the application.
+
+Please note that the design and aesthetics of the application's user interface will be handled separately. Your focus should be solely on building the backend and frontend components necessary for the blog functionalities.
+
+Api Endpoints👇
+
+![pwblog_api endpoint.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/57d5a706-95df-4d16-b3fb-6184c2130a51/pwblog_api_endpoint.png)
+
+1. **Login Page**
+
+![loginPage.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e667c5b-6598-47f6-9803-c52b3d086cbc/loginPage.png)
+
+1. **Register Page**
+
+![registerPage.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61ffd5fb-d1f4-41f9-9824-118f980f9b78/registerPage.png)
+
+1. **Home Page**
+
+![homepage.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9217388c-120c-48c3-a5bc-0b458dea1e6e/homepage.png)
+
+1. **Add Blog**
+    
+    
+    ![add blog.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f457c975-5e5a-4f0b-a264-61639d925a7b/add_blog.png)
+    
+    1. **My Blog Page**
+    
+    ![myblog.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/02e63473-1326-4ca6-8c35-1678d5fcfce5/myblog.png)
+    
+    1. Edit Blog/Update Blog
+</aside>
