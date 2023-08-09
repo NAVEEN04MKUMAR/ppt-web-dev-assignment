@@ -1,1 +1,79 @@
 
+# Assignment Questions 8
+
+<aside>
+💡 **Q.1**  Whats React and its pros and cons?
+
+</aside>
+
+<aside>
+💡 **Q.2** What do you understand by Virtual Dom?
+
+</aside>
+
+<aside>
+💡 **Q.3** Difference between Virtual Dom vs Real Dom
+
+</aside>
+
+<aside>
+💡 **Q.4** Whats component? Types of component
+
+</aside>
+
+<aside>
+💡 **Q.5** Difference between class & function based component
+
+</aside>
+
+<aside>
+💡 **Q.6** Explain react component life cycle
+
+</aside>
+
+<aside>
+💡 **Q.7** Explain Prop Drilling in React & Ways to avoid it
+
+</aside>
+
+<aside>
+💡 **Q.8** Create a Counter Web App using React
+
+- Develop a web application using React that functions as a counter.
+- Include two buttons in the UI:
+    1. "Increment" button:
+        - On clicking this button, the counter value should be incremented by one.
+    2. "Decrement" button:
+        - On clicking this button, the counter value should be decremented by one.
+- Implement the counter logic using React's state management.
+- Ensure that the counter value is displayed in the UI and updates in real-time when incremented or decremented.
+- Use appropriate React components and hooks to manage the counter state and handle button click events.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b3213d6-6918-4e52-9f90-3f973973f9ee/Untitled.png)
+
+</aside>
+
+<aside>
+💡 **Q.9**  Develop a **GitHub User Finder** web application using **React** The application should allow users to enter a **GitHub username** and display relevant information about the user, including their avatar and name. The design of the application should follow the layout provided in the image below.
+
+- Use Github Api to get User Data “https://api.github.com/users”
+
+![github user find.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fcd43c3b-9f13-4eba-a654-de1e0284d5e6/github_user_find.png)
+
+</aside>
+
+<aside>
+💡 **Q.10**  Develop a simple website using React, fetch and display products from the "https://fakestoreapi.com/products" API. The website should have the following features:
+
+- Fetch product data from the "https://fakestoreapi.com/products" API.
+- Display the products in a user-friendly UI.
+- Show **Three products** in a single row for optimal visibility and layout.
+- Use **React** to achieve the desired layout and functionality.
+- Ensure that the UI is visually appealing and responsive.
+- Implement error handling to handle any issues with API requests.
+- Test the website thoroughly to ensure proper functionality and performance.
+- Provide clear and concise documentation to guide users on how to interact with the website and understand its features.
+
+**Note**: Refer to the provided image or design specification for the desired layout and styling of the product display in a single row.
+
+</aside>
