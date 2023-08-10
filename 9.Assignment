@@ -4,19 +4,94 @@
 <aside>
 💡 **Q.1** What are hooks in react? how to identify hooks?
 
-</aside>
+Hooks:
+They provide a way to add state and side effects to functional components, making it easier to manage stateful logic and reuse code
 
-<aside>
+By convention, any function starting with "use" that is called within a functional component is a hook.
+
 💡 **Q.2** Explain useState Hook & what can you achieve with it?
 
-</aside>
+It allows you to add stateful behavior to functional components without the need for class components. 
+With useState, you can achieve dynamic and interactive UIs by managing and updating state within your components.
 
-<aside>
+User Input Handling: useState is often used to manage user input in forms or interactive components. 
+You can capture and update user input as state changes.
+
+Toggle States: You can easily toggle between different states (e.g., showing/hiding content, enabling/disabling features) by updating the state variable.
+
 💡 **Q.3** How to pass data from one component to another component
 
-</aside>
+Passing data from one component to another component in React can be accomplished through several methods, depending on the relationship between the components and the direction of data flow.
 
-<aside>
+Props (Parent to Child):
+You can pass data from a parent component to a child component using props. This is the most straightforward way to share data within a component hierarchy.
+
+ParentComponent.js:
+
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+function ParentComponent() {
+  const data = 'Hello from Parent';
+  return <ChildComponent data={data} />;
+}
+
+export default ParentComponent;
+
+ChildComponent.js:
+
+import React from 'react';
+
+function ChildComponent(props) {
+  return <div>{props.data}</div>;
+}
+
+export default ChildComponent;
+
+ Callback Functions (Child to Parent):
+To pass data from a child component to a parent component, you can define a callback function in the parent and pass it as a prop to the child.
+
+ParentComponent.js:
+
+import React, { useState } from 'react';
+import ChildComponent from './ChildComponent';
+
+function ParentComponent() {
+  const [receivedData, setReceivedData] = useState('');
+
+  const handleChildData = (data) => {
+    setReceivedData(data);
+  };
+
+  return (
+    <div>
+      <ChildComponent onDataReceived={handleChildData} />
+      <p>Received data: {receivedData}</p>
+    </div>
+  );
+}
+
+export default ParentComponent;
+
+ChildComponent.js:
+
+import React from 'react';
+
+function ChildComponent(props) {
+  const sendDataToParent = () => {
+    const data = 'Data from Child';
+    props.onDataReceived(data);
+  };
+
+  return (
+    <div>
+      <button onClick={sendDataToParent}>Send Data to Parent</button>
+    </div>
+  );
+}
+
+export default ChildComponent;
+
 💡 **Q.4** What is the significance of the "key" prop in React lists, and why is it important to use it correctly?
 
 </aside>
